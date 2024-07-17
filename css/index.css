@@ -25,7 +25,6 @@ ul li {
 }
 
 /* Topbar  */
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -33,31 +32,73 @@ ul li {
   background-color: #222425;
   color: white;
   padding: 5px 10px;
-  text-align: right;
   font-size: 0.9em;
 }
+
 .top-bar .left-content {
   display: flex;
   align-items: center;
 }
+
 .top-bar .right-content {
   display: flex;
   align-items: center;
 }
+
 .top-bar .horario {
   margin-right: 15px;
-
 }
+
 .top-bar a {
   color: white;
   margin-left: 10px;
   margin-right: 15px;
   text-decoration: none;
 }
-.top-bar .icon {
+
+.top-bar .icon, .top-bar .itel {
   margin-left: 15px;
 }
+/* Necesito que a partir de los 675 px el contenido quede centrado de forma responsive */
+@media (max-width: 675px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-bar .left-content,
+  .top-bar .right-content {
+    width: 100%;
+  }
+  
+  .top-bar .right-content {
+    flex-direction: column;
+  }
+  
+  .top-bar .icon {
+    display: none;
+  }
+  /* 
+  
+  .top-bar span {
+    display: block;
+    margin: 2px 0;
+  } */
+}
 
+@media (max-width: 1024px) {
+  .top-bar {
+    justify-content: center;
+  }
+  
+  .top-bar .horario {
+    display: none;
+  }
+  
+  .top-bar .right-content {
+    justify-content: center;
+  }
+}
 
 /* Navbar */
 
