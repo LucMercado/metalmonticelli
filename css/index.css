@@ -262,7 +262,7 @@ ul li {
 .ubicacion {
   display: flex;
   min-height: 100vh;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .ubicacion .mapa,
 .ubicacion .info {
@@ -276,6 +276,7 @@ ul li {
   background-color: #f8a600;
 }
 .ubicacion .mapa iframe {
+  height: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .ubicacion .info {
@@ -301,7 +302,11 @@ ul li {
     flex-direction: column;
   }
   .ubicacion .mapa iframe {
+    height: 50vh;
     width: 100%;
+  }
+  .ubicacion .info {
+    text-align: center;
   }
 }
 
