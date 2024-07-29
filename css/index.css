@@ -270,8 +270,7 @@ ul li {
 
 .ubicacion {
   display: flex;
-  min-height: 100vh;
-  margin-top: 50px;
+  height: 100vh;
 }
 .ubicacion .mapa,
 .ubicacion .info {
@@ -282,14 +281,19 @@ ul li {
   align-items: center;
 }
 .ubicacion .mapa {
-  background-color: #f8a600;
+  /* background-color: #f8a600; */
+  margin-top: 40px;
+  background-image: url(../img/portadas/fondo-4.png);
+  background-size: cover;
 }
 .ubicacion .mapa iframe {
   height: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .ubicacion .info {
-  background-color: #06771f;
+  /* background-color: #06771f; */
+  background-image: url(../img/portadas/fondo-5.png);
+  background-size: cover;
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
@@ -306,12 +310,14 @@ ul li {
   color: white;
   text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 946px) {
   .ubicacion {
     flex-direction: column;
   }
+  .ubicacion .mapa{
+    padding: 20px;
+  }
   .ubicacion .mapa iframe {
-    height: 50vh;
     width: 100%;
   }
   .ubicacion .info {
