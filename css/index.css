@@ -13,7 +13,15 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, ol {
+  list-style: none;
 }
 
 @font-face {
@@ -313,70 +321,73 @@ ul li {
 /* ##############################   Implementos   ##############################*/
 
 .implementos {
-  padding: 60px 0;
-  background-color: #F8A600;
-}
-
-.implementos h2 {
   text-align: center;
+  padding: 50px 0;
+}
+
+.implementos h1 {
+  margin-bottom: 30px;
   font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #333;
 }
 
-.implementos .container {
-  display: flex;
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.producto {
+  display: flex !important;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  height: 280px;
+  margin: 0 10px;
+  overflow: hidden;
 }
 
-.implementos .producto {
-  height: 23vh;
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+.slick-slide {
+  overflow: visible; /* Ensure each slide allows overflow */
+}
+
+.slick-list {
+  overflow: visible; /* Ensure the entire slider allows overflow */
+}
+
+
+
+.slick-track {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #F07C00 ;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.implementos .producto:nth-child(odd) {
-  flex-direction: row;
-}
-
-.implementos .producto:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.implementos .producto img {
-  max-height: 20vh;
-  max-width: 20vw;
-  border-radius: 5px;
-}
-
-.implementos .producto .nombre {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #333;
-  margin: 0 20px;
-}
-
-.implementos .producto:hover {
-  background-color: #FFEC00 ;
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .implementos .producto {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .implementos .producto img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
 }
