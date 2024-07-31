@@ -122,6 +122,7 @@ ul li {
   top: 31px;
   z-index: 1020;
   background-color: #00a859;
+  border-bottom: 1px solid #00a859;
 }
 .navbar-brand {
   display: flex;
@@ -217,7 +218,7 @@ ul li {
   }
 }
 
-/*###################### Seccion productos ########################### */
+/*###################### Historia 1 ########################### */
 
 .historia {
   padding: 50px 0;
@@ -338,6 +339,53 @@ ul li {
   align-items: center;
 }
 
+/* ##############################   Historia 2   ##############################*/
+.historia_2 {
+  padding: 50px 0;
+  background-image: url(../img/portadas/fondo-naranja.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.historia_2 .container {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+.historia_2 h2 {
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(71, 71, 71, 0.6);
+}
+.video {
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* ##############################   Formulario   ##############################*/
+.formulario {
+  padding: 30px 0;
+  background-image: url(../img/portadas/fondo-amarillo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.formulario .container {
+  height: 1300px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.form {
+  
+  filter: drop-shadow(0 2px 6px rgb(114, 114, 114));
+}
+
 
 /* ##############################   Ubicacion   ##############################*/
 
@@ -365,7 +413,7 @@ ul li {
 }
 .ubicacion .info {
   /* background-color: #06771f; */
-  background-image: url(../img/portadas/fondo-5.png);
+  background-image: url(../img/portadas/fondo-7.jpg);
   background-size: cover;
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -402,7 +450,7 @@ ul li {
 /* ##############################   Catalogo   ##############################*/
 
 .catalogo {
-  padding: 110px 0;
+  padding: 90px 0;
   background-color: #f8f8f8;
 }
 
@@ -412,7 +460,7 @@ ul li {
 }
 
 .catalogo .card {
-  border: none;
+  border: none  ;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -476,6 +524,7 @@ ul li {
   font-size: 1em;
   color: #555;
   flex-grow: 1;
+  margin: 0;
 }
 
 .catalogo .btn {
@@ -492,6 +541,10 @@ ul li {
 
 
 @media (max-width: 991px) {
+  .catalogo {
+  padding: 90px 0;
+
+  }
   .catalogo .col-md-4 {
     flex: 0 0 50%;
     max-width: 50%;
