@@ -172,7 +172,9 @@ ul li {
   background-image: url(../img/portadas/portada-2-min.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
+
 
   display: flex;
   align-items: center;
