@@ -263,6 +263,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100%;
 }
 
@@ -376,7 +377,9 @@ ul li {
 }
 .historia_2 .container {
   max-width: 60vw;
+  height: 70vh;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .historia_2 h2 {
   padding: 20px;
@@ -388,12 +391,15 @@ ul li {
   text-shadow: 2px 2px 4px rgba(71, 71, 71, 0.6);
 }
 .video {
+  width: 100%;
+  height: 100%;
   border: 5px solid #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 767px) {
   .historia_2 .container {
     max-width: 90vw;
+    height: 50vh;
   }
   .historia_2 h2 {
     font-size: 1.5em;
@@ -472,7 +478,7 @@ ul li {
 }
 .ubicacion .mapa {
   /* background-color: #f8a600; */
-  margin-top: 40px;
+  margin-top: 50px;
   background-image: url(../img/portadas/fondo-4.png);
   background-size: cover;
 }
@@ -512,6 +518,12 @@ ul li {
   }
   .ubicacion .info {
     text-align: center;
+  }
+}
+
+@media (max-width: 679px) {
+  .ubicacion .mapa{
+    margin-top: 80px;
   }
 }
 
@@ -640,6 +652,7 @@ footer {
   background-color: #06771F;
   padding: 20px 0;
   color: rgb(238, 238, 238);
+  margin: 0;
 }
 
 .footer-content {
@@ -723,4 +736,95 @@ footer {
   .footer-icons {
     margin-top: 10px;
   }
+}
+
+/* ##############################   Productos   ##############################*/
+
+.container-producto {
+  padding: 80px 0 0;
+}
+
+.section-productos {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-productos {
+  color: #06771F;
+}
+
+.machine-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.machine-features ul li {
+  background: #eef;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #06771F;
+}
+
+/* Gallery */
+.machine-gallery .gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.machine-gallery .gallery video {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.titulo-producto {
+  text-align: center;
+  width: 100%;
+}
+
+.aditional-info p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.img-produ {
+  width: 40%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+  .img-produ {
+    width: 80%;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float i {
+  line-height: 60px; /* Centra el ícono dentro del botón */
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  text-decoration: none;
 }
